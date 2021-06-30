@@ -11,7 +11,7 @@ def PhotoClick() :
     # pyautogui.press('enter')
     Camera = True
     while(Camera):
-        function = input(print("Please press Enter to click the next photo and press 2 to convert into pdf..  "))
+        function = input(print("Please press Enter to click the next photo and press 2 to end the process..  "))
         Camera = False
         if(function == ''):
             videoCaptureObject = cv2.VideoCapture(0,cv2.CAP_DSHOW)
