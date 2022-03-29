@@ -7,11 +7,11 @@ import cv2
 
 def PhotoClick() :
     num = 1   
-    img = input(print("Name of the file  "))
-    # pyautogui.press('enter')
+    # img = input(print("Name of the file  "))
+    img = input("Name of the file  ")
     Camera = True
     while(Camera):
-        function = input(print("Please press Enter to click the next photo and press 2 to end the process..  "))
+        function = input("Please press Enter to click the next photo and press 2 to end the process..  ")
         Camera = False
         if(function == ''):
             videoCaptureObject = cv2.VideoCapture(0,cv2.CAP_DSHOW)
@@ -30,6 +30,7 @@ def PhotoClick() :
             Camera = True
         if(function == '2'):
             Camera = False
+
             
 
 
